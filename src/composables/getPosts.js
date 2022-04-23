@@ -7,7 +7,6 @@ const getPosts = () => {
 
     const load = async () => {
         try {
-
             const response = await projectFirestore.collection('posts')
                 .orderBy('createdAt', "desc")
                 .get();
